@@ -1,0 +1,2 @@
+# vite-markup-format
+viteでビルドするマークアップフォーマット
