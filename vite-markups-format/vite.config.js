@@ -1,3 +1,6 @@
+// jquery
+import $ from 'jquery'
+
 import { defineConfig } from 'vite';
 
 import { resolve } from 'path';

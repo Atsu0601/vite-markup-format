@@ -25,5 +25,8 @@
     "> 5%",
     "Firefox ESR",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.6.4"
+  }
 }
