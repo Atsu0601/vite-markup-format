@@ -7,6 +7,8 @@ import { resolve } from 'path';
 
 //handlebarsプラグインimport
 import handlebars from 'vite-plugin-handlebars';
+// imageminPluginプラグインimport
+import imageminPlugin from 'vite-plugin-imagemin'
 
 // HTMLの複数出力を自動化する
 //./src配下のファイル一式を取得
@@ -137,6 +139,7 @@ export default defineConfig({
       input: inputFiles,
     },
   },
+  
   /*
     プラグインの設定を追加
   */
@@ -149,6 +152,11 @@ export default defineConfig({
         return pageData[pagePath];
       },
     }),
-    htmlPlugin()
+    htmlPlugin(),
+    // 画像最適化ライブラリ
+    imageminPlugin({
+      // ここに設定を追加
+      lazyLoad: true,
+    }),
   ],
 });
