@@ -31,3 +31,5 @@ dist：書き出し用のディレクトリ
 ## 注意点  
 public内のjsは空であればエラーになりますが、ビルドは完了します。
 public内のjsは追加で読み込みしたjsなどを格納してください。
+reset.cssは、normalize.cssを使用
+scssは、foundationのディレクトリに共通部分のファイルを持たせ、_init.scssに統合して、style.scssで_init.scssを読み込み。
